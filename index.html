@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src='./main.js'></script>
+    <script defer src='./search.js'></script>
     <link href="./style.css" rel="stylesheet" />
 <body>
     <header>
@@ -15,17 +16,22 @@
             <input type='submit' value='Get Weather'>
         </form>
     </header>
+
     <main class='display' placeholder='text'>
         <section id='current_search' name='current_search'>
            <p>Choose a location to view the weather.</p> 
         </section>
+        <aside class="history" id='previous' name='previous' >
+            <h3>Previous Searches</h3>
+            <ul id='prior'>
+                <li>No previous searches</li>
+            </ul>
+        </aside>
+        <!-- FORECAST -->
         <section id='today'></section>
         <section id='tomorrow'></section>
         <section id='day_after_tomorrow'></section>
-        <aside class="history" >
-            <h3>Previous Searches</h3>
-            <ul>No previous searches</ul>
-        </aside>
+        
     </main>
 </body>
 </html>
