@@ -1,0 +1,29 @@
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.display {
+  margin: 0 auto;
+  grid-template-rows: 2;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  display: grid;
+  font-size: 13px;
+  text-align: center;
+}
+
+header {
+  background: #258080;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+#current_search {
+  border: 1px solid #258080;
+  background: lightgrey;
+  padding: px;
+  grid-column: 1 / span 3;
+}
+
